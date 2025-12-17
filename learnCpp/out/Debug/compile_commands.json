@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/mbp15/mySpace/learnCpp/out/Debug",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/run.dir/task1.cpp.o -c /Users/mbp15/mySpace/learnCpp/task1.cpp",
+  "file": "/Users/mbp15/mySpace/learnCpp/task1.cpp",
+  "output": "CMakeFiles/run.dir/task1.cpp.o"
+}
+]
