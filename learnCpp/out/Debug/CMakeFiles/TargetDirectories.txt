@@ -1,3 +1,0 @@
-/Users/mbp15/mySpace/learnCpp/out/Debug/CMakeFiles/run.dir
-/Users/mbp15/mySpace/learnCpp/out/Debug/CMakeFiles/edit_cache.dir
-/Users/mbp15/mySpace/learnCpp/out/Debug/CMakeFiles/rebuild_cache.dir
