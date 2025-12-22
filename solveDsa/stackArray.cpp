@@ -2,6 +2,7 @@
 
 //#define MAX 100;
 
+void isempty();
 void push();
 void pop();
 void display();
@@ -23,6 +24,7 @@ int main() {
     std::cout << "Enter 2 for Pop" << std::endl;
     std::cout << "Enter 3 for display" << std::endl;
     std::cout << "Enter 4 for Exit" << std::endl;
+    std::cout << "Enter 5 to check if stack is empty" << std::endl;
     std::cout << "Choose : ";
     std::cin >> choice;
 
@@ -47,6 +49,11 @@ int main() {
         std::cout << "Exiting" << std::endl;
         break;
     }
+
+    case 5:{
+        isempty();
+        break;
+           }
 
     default:{
                 std::cout << "Enter a valid choice 1|2|3|4" << std::endl;
@@ -90,4 +97,11 @@ void display()
     }
     }
 
+void isempty()
+    {
+    if(top<=-1)
+        {
+            std::cout << "Yes stack is empty" << std::endl;
+        }
 
+    }
