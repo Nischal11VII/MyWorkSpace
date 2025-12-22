@@ -2,8 +2,8 @@ concepts to learn
 
 # 22nd dec
 > todo_Concepts  
-  - [ ] STL:string,vector,queue
-  - [ ] RAII concept
+  - [x] STL:string,vector,queue
+  - [x] RAII concept
   - [ ] Const correctness
 
 ```cpp
