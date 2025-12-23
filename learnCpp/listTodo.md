@@ -8,8 +8,11 @@ concepts to learn
 
 # 23rd dec
 > concepts
-  - [ ] POSIX Socket APIs
-  - [ ] TCP networking basics in relation to localHost only
+  - [x] POSIX Socket APIs
+  - [x] TCP networking basics in relation to localHost only
+    
+    - 23rd dec progress -> 
+        - locally hosted a tcp server. where clients can join in on a server and send message.
 
 
 
