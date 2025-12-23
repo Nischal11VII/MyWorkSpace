@@ -1,0 +1,1 @@
+# do not use "using namespace std;" in global. -> might arise a naming conflict
