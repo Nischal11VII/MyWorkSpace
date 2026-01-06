@@ -8,15 +8,19 @@ class solution
     public:
         std::vector<int> wSlide(std::vector<int>& nums , int k)
         {
-            std::queue<int> q;
+      std::queue<int> q;
          //   std::queue<int> q2;
             std::vector<int> result;
             int largest;
             int tempArr[k];
             int temp;
-
+            int small = nums[0];
             for(int x : nums)
             {
+                if(x<small)
+                {
+                    small = x;
+                }
             q.push(x);
             }
 
@@ -29,11 +33,12 @@ class solution
                     tempArr[i] = temp;
                     q.pop();
                 }
-                largest = tempArr[0];
 //check largest;
             
             while(true)
                 {
+                       largest = small;
+
                     //this loops find the largest value in k windows
             for(int i = 0 ; i < k ; i++)
             {
@@ -42,8 +47,10 @@ class solution
                     largest = tempArr[i];
                 }
             }
-            result.push_back(largest);
-            largest = tempArr[0]; 
+            
+                  result.push_back(largest);
+
+
             for(int i = 0 ; i < (k-1) ; i++)
                     {
                     tempArr[i] = tempArr[i+1];
@@ -61,7 +68,6 @@ class solution
                 }
 
             return result;
-
         }
 
 
@@ -73,8 +79,8 @@ int main()
         int k;
         std::vector<int> nums;
         std::vector<int> result;
-    //    int arr[8] = { 1 ,3,-1,-3,5,3,6,7};
-        int arr[2] = {1 , -1};
+        int arr[8] = { 1 ,3,-1,-3,5,3,6,7};
+     //   int arr[2] = {1 , -1};
         for(int i : arr)
             {
             nums.push_back(i);
