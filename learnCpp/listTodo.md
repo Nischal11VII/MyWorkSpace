@@ -14,6 +14,10 @@ concepts to learn
     - 23rd dec progress -> 
         - locally hosted a tcp server. where clients can join in on a server and send message.
 
+# 11th Jan
+> concepts
+   - [ ] smart pointer
+   - [ ] .. 
 
 
 

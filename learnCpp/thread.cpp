@@ -40,7 +40,7 @@ void threadpop() {
     // solution for lock_guard -> unique_lock;
    
       //provides ability to temporarily unlock the unlock the mutex and lock it later;
-      std::unique_lock<std::mutex> lock(mux);
+     std::unique_lock<std::mutex> lock(mux);
       
     //unlocks the mutex -> push threads takes the priority -> this thread however enters the blocked or waiting state which tells the operating system schedular(OSS) to not give current threads any CPU time. -> wait for the push thread to call and OSS notifies this thread to wake up   
       cv.wait(lock , [] {return !q.empty();}); 
